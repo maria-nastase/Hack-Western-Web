@@ -15,10 +15,14 @@ const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWI
 
 export async function POST(req) {
     const test = req.body.hello
+    const { fname, lname, number, severity, latitude, longitude } =  req.json();
+
+    const locationLink = encodeURI('https://www.google.com/maps/place/43.006841,-81.2769333')
+    
 
     client.messages
     .create({
-        body: 'test message',
+        body: `Hello, we have detected that ${fname} ${lname} has had a ${severity} fall. Please check in with them at the following location: ${locationLink}.`,
         from: process.env.FROM_NUMBER,
         to: process.env.TO_NUMBER
     })
