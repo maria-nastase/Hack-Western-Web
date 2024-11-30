@@ -1,15 +1,15 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import dotenv from 'dotenv'
 
 dotenv.config()
 
 const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
-export async function GET(_req) {
+export async function GET() {
     return NextResponse.json({ test: "hello"})
 }
 
-export async function POST(req) {
+export async function POST(req: any) {
     const { fname, lname, number, severity, latitude, longitude } =  req.json();
 
     const locationLink = encodeURI('https://www.google.com/maps/place/43.006841,-81.2769333')
@@ -20,7 +20,7 @@ export async function POST(req) {
         from: process.env.FROM_NUMBER,
         to: process.env.TO_NUMBER
     })
-    .then(message => console.log(message.sid));
+    .then((message: any) => console.log(message.sid));
 
     return NextResponse.json({ok: true})
 }
