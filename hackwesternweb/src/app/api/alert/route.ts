@@ -19,8 +19,8 @@ export async function POST(req) {
     client.messages
     .create({
         body: 'test message',
-        from: '+17754587628',
-        to: '+12262800252'
+        from: process.env.FROM_NUMBER,
+        to: process.env.TO_NUMBER
     })
     .then(message => console.log(message.sid));
 
