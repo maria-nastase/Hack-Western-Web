@@ -82,17 +82,23 @@ export default GoogleMap;*/
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
+
 const containerStyle = {
   width: '100%',
   height: '100%',
 };
 
-const center = {
-  lat: 37.437041393899676,
-  lng: -4.191635586788259
-};
 
-const GoogleMapComponent = () => {
+
+const GoogleMapComponent = ({latitude, longitude}) => {
+
+
+
+  const center = {
+    lat: latitude,
+    lng: longitude
+  };
+
   return (
     <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
       <GoogleMap

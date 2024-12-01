@@ -23,13 +23,17 @@ function Home({ fname, lname, severity, latitude, longitude, createdAt, fallID, 
       </div>
       <div className="flex-1 p-6 fixed top-0">
         <div className="h-screen z-1 w-full fixed top-0 left-0 p-0 z-0">
-          <GoogleMap
-            coordinates={{ lat: parseFloat(latitude), lng: parseFloat(longitude) }}
-            showRoute={true}
-            zoomControl={true}
-            gestureHandling="auto"
-            disableDefaultUI={false}
-            draggable={true}
+          <GoogleMap 
+            latitude={parseFloat(latitude)}
+            longitude={parseFloat(longitude)}
+            
+            //center={{ lat: parseFloat(latitude), lng: parseFloat
+            //coordinates={{ lat: parseFloat(latitude), lng: parseFloat(longitude) }}
+            //showRoute={true}
+            //zoomControl={true}
+            //gestureHandling="auto"
+            //disableDefaultUI={false}
+            //draggable={true}
           />
         </div>
 
