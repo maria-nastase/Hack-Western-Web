@@ -26,7 +26,7 @@ const ShareableLink = ({
   };
 
   return (
-    <Card className="w-[500px] bg-white p-4 z-10 fixed bottom-0 left-0">
+    <Card className="w-[500px] bg-white p-4 z-10 fixed bottom-0 left-0 box">
       <div className="flex items-center gap-3">
         <Link className="h-5 w-5 text-primary flex-shrink-0" />
         <div className="flex-1 truncate text-sm text-muted-foreground">

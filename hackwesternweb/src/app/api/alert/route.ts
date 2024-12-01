@@ -35,8 +35,15 @@ export async function POST(req: any) {
 
     // if (!fallenUser) return new Response('', { status: 400 })
     
+    const headersList = req.headers();
+    const hostUrl = req.headers.get('host');
+    console.log(headersList);
+    console.log(hostUrl);
 
-    // const locationLink = encodeURI('https://www.google.com/maps/place/43.006841,-81.2769333')
+    console.log(createFall.id);
+
+    const locationLink = encodeURI(`${hostUrl}/?id=${createFall.id}`);
+    console.log(locationLink);
     
     // client.messages
     // .create({

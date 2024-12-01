@@ -21,7 +21,7 @@ const PatientCard = ({
   timestamp = "2024-03-21 14:30:00",
 }: PatientCardProps) => {
   return (
-    <Card className="w-[500px] bg-white shadow-lg z-10 fixed left-0 bottom-20">
+    <Card className="w-[500px] bg-white shadow-lg z-10 fixed left-0 bottom-20 box">
       <CardHeader className="pb-4">
         <div className="flex items-center gap-4">
           <Avatar className="h-16 w-16">

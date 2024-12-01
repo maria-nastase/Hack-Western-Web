@@ -18,7 +18,7 @@ function Home({ fname, lname, severity, latitude, longitude, createdAt, fallID, 
 
   return (
     <div className="w-screen h-screen bg-background">
-      <div className="z-10 bg-white w-[500px] h-[70px] shadow-lg relative flex items-center justify-center rounded-md gap-2 text-muted-foreground">
+      <div className="z-10 bg-white w-[500px] h-[70px] shadow-lg relative flex items-center justify-center rounded-md gap-2 text-muted-foreground box title">
         <h1 className="text-5xl font-semibold center">Upright</h1>
       </div>
       <div className="flex-1 p-6 fixed top-0">

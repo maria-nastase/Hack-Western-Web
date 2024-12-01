@@ -48,7 +48,7 @@ const FallHistorySidebar = ({
 }: FallHistorySidebarProps) => {
   return (
     <div
-      className={`fixed right-0 top-0 h-full transition-all duration-300 bg-white ${isOpen ? "w-[500px]" : "w-[60px]"}`}
+      className={`fixed right-0 top-0 h-full transition-all duration-300 bg-white sidebar ${isOpen ? "w-[500px]" : "w-[60px] collapsed"}`}
     >
       <Card className="h-full bg-white shadow-lg rounded-l-lg rounded-r-none border-r-0">
         <div className="flex h-full">
