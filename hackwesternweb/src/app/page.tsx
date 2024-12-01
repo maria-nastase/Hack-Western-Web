@@ -43,10 +43,10 @@ export default async function Page({
     const processedFalls = falls?.map(item => {
       return {
         ...item,
-        latitude: item.latitude.toString(),
-        longitude: item.longitude.toString(),
+        latitude: item.latitude.toFixed(4).toString(),
+        longitude: item.longitude.toFixed(4).toString(),
         severity: item.severity?.toLowerCase(),
-        location: `${item.latitude.toString()}, ${item.longitude.toString()}`,
+        location: `${item.latitude.toFixed(4).toString()}, ${item.longitude.toFixed(4).toString()}`,
         timestamp: item.createdAt,
         url: `${hostUrl}/?id=${item.id}`,
         fallID: item.id
@@ -58,8 +58,8 @@ export default async function Page({
         fname={fname}
         lname={lname}
         severity={severity?.toLowerCase()}
-        latitude={latitude?.toString()}
-        longitude={longitude?.toString()}
+        latitude={latitude?.toFixed(4).toString()}
+        longitude={longitude?.toFixed(4).toString()}
         createdAt={createdAt}
         fallID={id}
         prevFalls={processedFalls}
