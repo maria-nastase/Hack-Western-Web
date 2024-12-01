@@ -13,27 +13,21 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
+model Fall {
   id        Int      @id @default(autoincrement())
-  title     String   @db.VarChar(255)
+  severity  String?  @db.VarChar(255)
+  latitude  Decimal
+  longitude Decimal
   createdAt DateTime @default(now()) @db.Timestamp(6)
-  content   String?
-  published Boolean  @default(false)
-  authorId  Int
-  author    User     @relation(fields: [authorId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-}
-
-model Profile {
-  id     Int     @id @default(autoincrement())
-  bio    String?
-  userId Int     @unique
-  user   User    @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }
 
 model User {
-  id      Int      @id @default(autoincrement())
-  name    String?  @db.VarChar(255)
-  email   String   @unique @db.VarChar(255)
-  posts   Post[]
-  profile Profile?
+  id     Int     @id @default(autoincrement())
+  fname  String  @db.VarChar(255)
+  lname  String  @db.VarChar(255)
+  email  String? @db.VarChar(255)
+  number String  @db.VarChar(255)
+  falls  Fall[]
 }

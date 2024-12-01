@@ -1,26 +1,50 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import dotenv from 'dotenv'
+import { PrismaClient, Prisma } from "@prisma/client";
 
 dotenv.config()
 
 const client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
+const prisma = new PrismaClient()
 
 export async function GET() {
     return NextResponse.json({ test: "hello"})
 }
 
 export async function POST(req: any) {
-    const { fname, lname, number, severity, latitude, longitude } =  req.json();
+    const { latitude, longitude, severity, userId } = await req.json()
 
-    const locationLink = encodeURI('https://www.google.com/maps/place/43.006841,-81.2769333')
+    let fall: Prisma.FallCreateInput =  {
+        latitude: Number(latitude),
+        longitude: Number(longitude),
+        severity: severity,
+        user: {
+            connect:  {
+                id: Number(userId)
+            }
+        }
+    }
+    const createFall = await prisma.fall.create({ data: fall })
+
+    // const fallenUser = await prisma.user.findUnique({
+    //     where: {
+    //       id: userId,
+    //     },
+    //   }
+    // )
+
+    // if (!fallenUser) return new Response('', { status: 400 })
     
-    client.messages
-    .create({
-        body: `Hello, we have detected that ${fname} ${lname} has had a ${severity} fall. Please check in with them at the following location: ${locationLink}.`,
-        from: process.env.FROM_NUMBER,
-        to: process.env.TO_NUMBER
-    })
-    .then((message: any) => console.log(message.sid));
 
-    return NextResponse.json({ok: true})
+    // const locationLink = encodeURI('https://www.google.com/maps/place/43.006841,-81.2769333')
+    
+    // client.messages
+    // .create({
+    //     body: `Hello, we have detected that ${fallenUser.fname} ${fallenUser.lname} has had a ${severity} fall. Please check in with them at the following location: ${locationLink}.`,
+    //     from: process.env.FROM_NUMBER,
+    //     to: process.env.TO_NUMBER
+    // })
+    // .then((message: any) => console.log(message.sid));
+
+    return Response.json(createFall)
 }
