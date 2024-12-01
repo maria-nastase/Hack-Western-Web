@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { Card } from "@/app/components/ui/card";
 import { Button } from "@/app/components/ui/button";
 import { Navigation2, ZoomIn, ZoomOut } from "lucide-react";
@@ -19,10 +19,10 @@ const GoogleMap = ({
 }: GoogleMapProps) => {
   return (
     <Card className="relative w-full h-full bg-white overflow-hidden">
-      {/* Placeholder for Google Maps */}
-      <div className="w-full h-full bg-slate-100 relative">
-        {/* Simulated map background */}
-        <div className="absolute inset-0">
+      /* Placeholder for Google Maps */
+      /*<div className="w-full h-full bg-slate-100 relative">
+        /* Simulated map background */
+        /*<div className="absolute inset-0">
           <img
             src="https://dummyimage.com/1012x982/e2e8f0/94a3b8&text=Map+View"
             alt="Map"
@@ -30,8 +30,8 @@ const GoogleMap = ({
           />
         </div>
 
-        {/* Map Controls */}
-        <div className="absolute top-4 right-4 flex flex-col gap-2">
+        /* Map Controls */
+        /*<div className="absolute top-4 right-4 flex flex-col gap-2">
           <Button
             variant="secondary"
             size="icon"
@@ -46,27 +46,27 @@ const GoogleMap = ({
           >
             <ZoomOut className="h-4 w-4" />
           </Button>
-        </div>
+        </div>*/
 
-        {/* Navigation Controls */}
-        {showRoute && (
+        /* Navigation Controls */
+        /*{showRoute && (
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4">
             <Button className="bg-primary text-white shadow-lg flex items-center gap-2">
               <Navigation2 className="h-4 w-4" />
               Start Navigation
             </Button>
           </div>
-        )}
+        )}*/
 
-        {/* Incident Location Marker */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        /* Incident Location Marker */
+        /*<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-6 h-6 bg-destructive rounded-full animate-pulse">
             <div className="w-6 h-6 bg-destructive/50 rounded-full animate-ping" />
           </div>
-        </div>
+        </div>*/
 
-        {/* Route Line Placeholder */}
-        {showRoute && (
+        /* Route Line Placeholder */
+        /*{showRoute && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-1/2 h-0.5 bg-primary-foreground/50 transform rotate-45" />
           </div>
@@ -76,4 +76,34 @@ const GoogleMap = ({
   );
 };
 
-export default GoogleMap;
+export default GoogleMap;*/
+
+'use client'
+import React from 'react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
+const containerStyle = {
+  width: '100%',
+  height: '400px'
+};
+
+const center = {
+  lat: 37.437041393899676,
+  lng: -4.191635586788259
+};
+
+const GoogleMapComponent = () => {
+  return (
+    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+      >
+        <Marker position={center} />
+      </GoogleMap>
+    </LoadScript>
+  );
+};
+
+export default GoogleMapComponent;
