@@ -10,7 +10,7 @@ import LoadingState from "./FallDashboard/LoadingState";
 function Home({ fname, lname, severity, latitude, longitude, createdAt, fallID, prevFalls, url }) {
   const [isLoading] = useState(false);
   const [selectedIncidentId, setSelectedIncidentId] = useState("1");
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   if (isLoading) {
     return <LoadingState />;
