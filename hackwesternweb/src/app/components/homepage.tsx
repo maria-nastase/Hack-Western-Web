@@ -23,17 +23,17 @@ function Home({ fname, lname, severity, latitude, longitude, createdAt, fallID, 
       </div>
       <div className="flex-1 p-6 fixed top-0">
         <div className="h-screen z-1 w-full fixed top-0 left-0 p-0 z-0">
-          <GoogleMap 
+          <GoogleMap
             latitude={parseFloat(latitude)}
             longitude={parseFloat(longitude)}
-            
-            //center={{ lat: parseFloat(latitude), lng: parseFloat
-            //coordinates={{ lat: parseFloat(latitude), lng: parseFloat(longitude) }}
-            //showRoute={true}
-            //zoomControl={true}
-            //gestureHandling="auto"
-            //disableDefaultUI={false}
-            //draggable={true}
+
+          //center={{ lat: parseFloat(latitude), lng: parseFloat
+          //coordinates={{ lat: parseFloat(latitude), lng: parseFloat(longitude) }}
+          //showRoute={true}
+          //zoomControl={true}
+          //gestureHandling="auto"
+          //disableDefaultUI={false}
+          //draggable={true}
           />
         </div>
 
@@ -41,6 +41,7 @@ function Home({ fname, lname, severity, latitude, longitude, createdAt, fallID, 
         <div className="items-start relative gap-4 z-10 top-20">
           <PatientCard
             patientName={`${fname} ${lname}`}
+            patientImage={`https://dummyimage.com/100x100/cccccc/666666&text=${fname[0]}${lname[0]}`}
             severity={severity}
             location={`(${latitude}, ${longitude})`}
             timestamp={createdAt}
