@@ -9,17 +9,18 @@ export default async function Page({
   params,
   searchParams,
 }: {
-  params: { slug: string };
-  searchParams?: { [key: string]: string | string[] | undefined };
+  params: Promise<{ slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
-
+  const resolvedSearchParams = await searchParams
   try {
     const headersList = await headers();
     const hostUrl = headersList.get('host'); // to get domain
 
+
     const fall = await prisma.fall.findUnique({
       where: {
-        id: Number(searchParams?.id) || 1,
+        id: Number(resolvedSearchParams?.id) || 1,
       },
     })
 
@@ -62,6 +63,6 @@ export default async function Page({
       />
     )
   } catch {
-    return <div>{`injury id: ${searchParams?.id} is not found`}</div>
+    return <div>{`injury id: ${resolvedSearchParams?.id} is not found`}</div>
   }
 }
