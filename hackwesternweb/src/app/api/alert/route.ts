@@ -12,6 +12,7 @@ export async function GET() {
 }
 
 export async function POST(req: any) {
+    const hostUrl = req.headers.get('host');
     const { latitude, longitude, severity, userId } = await req.json()
 
     let fall: Prisma.FallCreateInput =  {
@@ -26,32 +27,27 @@ export async function POST(req: any) {
     }
     const createFall = await prisma.fall.create({ data: fall })
 
-    // const fallenUser = await prisma.user.findUnique({
-    //     where: {
-    //       id: userId,
-    //     },
-    //   }
-    // )
+    const fallenUser = await prisma.user.findUnique({
+        where: {
+          id: userId,
+        },
+      }
+    )
 
-    // if (!fallenUser) return new Response('', { status: 400 })
+    if (!fallenUser) return new Response('', { status: 400 })
     
-    const headersList = req.headers();
-    const hostUrl = req.headers.get('host');
-    console.log(headersList);
-    console.log(hostUrl);
-
-    console.log(createFall.id);
+    // console.log(createFall.id);
 
     const locationLink = encodeURI(`${hostUrl}/?id=${createFall.id}`);
-    console.log(locationLink);
+    console.log("locationlink", locationLink);
     
-    // client.messages
-    // .create({
-    //     body: `Hello, we have detected that ${fallenUser.fname} ${fallenUser.lname} has had a ${severity} fall. Please check in with them at the following location: ${locationLink}.`,
-    //     from: process.env.FROM_NUMBER,
-    //     to: process.env.TO_NUMBER
-    // })
-    // .then((message: any) => console.log(message.sid));
+    client.messages
+    .create({
+        body: `Hello, we have detected that ${fallenUser.fname} ${fallenUser.lname} has had a ${severity} fall. Please check in with them at the following location: ${locationLink}.`,
+        from: process.env.FROM_NUMBER,
+        to: process.env.TO_NUMBER
+    })
+    .then((message: any) => console.log(message.sid));
 
     return Response.json(createFall)
 }
