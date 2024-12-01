@@ -9,7 +9,7 @@ interface FallHistoryEntry {
   id: string;
   timestamp: string;
   location: string;
-  severity: "low" | "medium" | "high";
+  severity: "low" | "medium" | "high" | "severe";
 }
 
 interface FallHistorySidebarProps {
@@ -22,9 +22,9 @@ interface FallHistorySidebarProps {
 
 const FallHistorySidebar = ({
   isOpen = true,
-  onToggle = () => {},
+  onToggle = () => { },
   selectedIncidentId = "",
-  onIncidentSelect = () => {},
+  onIncidentSelect = () => { },
   fallHistory = [
     {
       id: "1",
@@ -80,7 +80,7 @@ const FallHistorySidebar = ({
                     <FallHistoryItem
                       key={incident.id}
                       timestamp={incident.timestamp}
-                      location={incident.location}
+                      location={incident.location || 'bad'}
                       severity={incident.severity}
                       isSelected={selectedIncidentId === incident.id}
                       onClick={() => onIncidentSelect(incident.id)}

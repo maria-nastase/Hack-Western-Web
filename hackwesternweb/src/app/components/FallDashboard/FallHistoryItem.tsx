@@ -6,7 +6,7 @@ import SeverityIndicator from "./SeverityIndicator";
 interface FallHistoryItemProps {
   timestamp?: string;
   location?: string;
-  severity?: "low" | "medium" | "high";
+  severity?: "low" | "medium" | "high" | "severe";
   isSelected?: boolean;
   onClick?: () => void;
 }
@@ -16,7 +16,7 @@ const FallHistoryItem = ({
   location = "123 Main St, San Francisco, CA",
   severity = "medium",
   isSelected = false,
-  onClick = () => {},
+  onClick = () => { },
 }: FallHistoryItemProps) => {
   return (
     <Card
