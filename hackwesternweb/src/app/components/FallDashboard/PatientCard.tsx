@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Card, CardHeader, CardContent } from "@/app/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/app/components/ui/avatar";
@@ -48,7 +49,7 @@ const PatientCard = ({
           <div className="flex items-center gap-2 text-muted-foreground">
             <Clock className="h-4 w-4" />
             <span className="text-sm">
-              {new Date(timestamp).toLocaleString()}
+              {new Date(timestamp).toLocaleString("en-us")}
             </span>
           </div>
         </div>
