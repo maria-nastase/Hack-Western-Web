@@ -2,7 +2,7 @@ import React from "react";
 import { Badge } from "@/app/components/ui/badge";
 import { AlertTriangle, AlertCircle, AlertOctagon } from "lucide-react";
 
-type SeverityLevel = "low" | "medium" | "high";
+type SeverityLevel = "low" | "medium" | "high" | "severe";
 
 interface SeverityIndicatorProps {
   severity?: SeverityLevel;
@@ -19,22 +19,22 @@ const SeverityIndicator = ({
     low: {
       color: "bg-green-100 text-green-800 hover:bg-green-100/80",
       icon: AlertCircle,
-      label: "Low Severity",
+      label: "Low",
     },
     medium: {
       color: "bg-yellow-100 text-yellow-800 hover:bg-yellow-100/80",
       icon: AlertTriangle,
-      label: "Medium Severity",
+      label: "Medium",
     },
     high: {
       color: "bg-red-100 text-red-800 hover:bg-red-100/80",
       icon: AlertOctagon,
-      label: "High Severity",
+      label: "High",
     },
     severe: {
       color: "bg-red-500 text-black hover:bg-red-500/80",
       icon: AlertOctagon,
-      label: "Severe Severity",
+      label: "Severe",
     }
 
   };

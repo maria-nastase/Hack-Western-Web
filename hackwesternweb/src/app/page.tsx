@@ -45,7 +45,8 @@ export default async function Page({
         ...item,
         latitude: item.latitude.toString(),
         longitude: item.longitude.toString(),
-        severity: item.severity?.toLowerCase()
+        severity: item.severity?.toLowerCase(),
+        location: `${item.latitude.toString()}, ${item.longitude.toString()}`
       }
     })
 
