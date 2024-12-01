@@ -43,8 +43,7 @@ function Home({ fname, lname, severity, latitude, longitude, createdAt, fallID, 
           />
 
           <ShareableLink
-            incidentId={selectedIncidentId}
-            baseUrl={`${url}/id=${fallID}`}
+            shareableUrl={`${url}/?id=${fallID}`}
           />
         </div>
       </div>

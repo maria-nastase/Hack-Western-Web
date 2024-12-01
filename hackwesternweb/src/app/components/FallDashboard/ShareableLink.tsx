@@ -6,16 +6,14 @@ import { useState } from "react";
 
 interface ShareableLinkProps {
   incidentId?: string;
-  baseUrl?: string;
+  shareableUrl?: string;
 }
 
 const ShareableLink = ({
-  incidentId = "123",
-  baseUrl = "https://example.com/fall",
+  shareableUrl = "https://example.com/fall",
 }: ShareableLinkProps) => {
   const [copied, setCopied] = useState(false);
 
-  const shareableUrl = `${baseUrl}/${incidentId}`;
 
   const handleCopy = async () => {
     try {
