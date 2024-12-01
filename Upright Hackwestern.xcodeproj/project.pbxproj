@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		2AACAD3C2CFB773D008F662A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AACAD232CFB773A008F662A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AACAD2A2CFB773B008F662A;
+			remoteInfo = "Upright Hackwestern";
+		};
+		2AACAD462CFB773D008F662A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AACAD232CFB773A008F662A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AACAD2A2CFB773B008F662A;
+			remoteInfo = "Upright Hackwestern";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AACAD2B2CFB773B008F662A /* Upright Hackwestern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Upright Hackwestern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AACAD3B2CFB773D008F662A /* Upright HackwesternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Upright HackwesternTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AACAD452CFB773D008F662A /* Upright HackwesternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Upright HackwesternUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2AACAD2D2CFB773B008F662A /* Upright Hackwestern */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Upright Hackwestern";
+			sourceTree = "<group>";
+		};
+		2AACAD3E2CFB773D008F662A /* Upright HackwesternTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Upright HackwesternTests";
+			sourceTree = "<group>";
+		};
+		2AACAD482CFB773D008F662A /* Upright HackwesternUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Upright HackwesternUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AACAD282CFB773B008F662A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AACAD382CFB773D008F662A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AACAD422CFB773D008F662A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AACAD222CFB773A008F662A = {
+			isa = PBXGroup;
+			children = (
+				2AACAD2D2CFB773B008F662A /* Upright Hackwestern */,
+				2AACAD3E2CFB773D008F662A /* Upright HackwesternTests */,
+				2AACAD482CFB773D008F662A /* Upright HackwesternUITests */,
+				2AACAD2C2CFB773B008F662A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AACAD2C2CFB773B008F662A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AACAD2B2CFB773B008F662A /* Upright Hackwestern.app */,
+				2AACAD3B2CFB773D008F662A /* Upright HackwesternTests.xctest */,
+				2AACAD452CFB773D008F662A /* Upright HackwesternUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AACAD2A2CFB773B008F662A /* Upright Hackwestern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AACAD4F2CFB773D008F662A /* Build configuration list for PBXNativeTarget "Upright Hackwestern" */;
+			buildPhases = (
+				2AACAD272CFB773B008F662A /* Sources */,
+				2AACAD282CFB773B008F662A /* Frameworks */,
+				2AACAD292CFB773B008F662A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2AACAD2D2CFB773B008F662A /* Upright Hackwestern */,
+			);
+			name = "Upright Hackwestern";
+			packageProductDependencies = (
+			);
+			productName = "Upright Hackwestern";
+			productReference = 2AACAD2B2CFB773B008F662A /* Upright Hackwestern.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2AACAD3A2CFB773D008F662A /* Upright HackwesternTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AACAD522CFB773D008F662A /* Build configuration list for PBXNativeTarget "Upright HackwesternTests" */;
+			buildPhases = (
+				2AACAD372CFB773D008F662A /* Sources */,
+				2AACAD382CFB773D008F662A /* Frameworks */,
+				2AACAD392CFB773D008F662A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AACAD3D2CFB773D008F662A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2AACAD3E2CFB773D008F662A /* Upright HackwesternTests */,
+			);
+			name = "Upright HackwesternTests";
+			packageProductDependencies = (
+			);
+			productName = "Upright HackwesternTests";
+			productReference = 2AACAD3B2CFB773D008F662A /* Upright HackwesternTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2AACAD442CFB773D008F662A /* Upright HackwesternUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AACAD552CFB773D008F662A /* Build configuration list for PBXNativeTarget "Upright HackwesternUITests" */;
+			buildPhases = (
+				2AACAD412CFB773D008F662A /* Sources */,
+				2AACAD422CFB773D008F662A /* Frameworks */,
+				2AACAD432CFB773D008F662A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AACAD472CFB773D008F662A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2AACAD482CFB773D008F662A /* Upright HackwesternUITests */,
+			);
+			name = "Upright HackwesternUITests";
+			packageProductDependencies = (
+			);
+			productName = "Upright HackwesternUITests";
+			productReference = 2AACAD452CFB773D008F662A /* Upright HackwesternUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AACAD232CFB773A008F662A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					2AACAD2A2CFB773B008F662A = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					2AACAD3A2CFB773D008F662A = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 2AACAD2A2CFB773B008F662A;
+					};
+					2AACAD442CFB773D008F662A = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 2AACAD2A2CFB773B008F662A;
+					};
+				};
+			};
+			buildConfigurationList = 2AACAD262CFB773A008F662A /* Build configuration list for PBXProject "Upright Hackwestern" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AACAD222CFB773A008F662A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2AACAD2C2CFB773B008F662A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AACAD2A2CFB773B008F662A /* Upright Hackwestern */,
+				2AACAD3A2CFB773D008F662A /* Upright HackwesternTests */,
+				2AACAD442CFB773D008F662A /* Upright HackwesternUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AACAD292CFB773B008F662A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AACAD392CFB773D008F662A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AACAD432CFB773D008F662A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AACAD272CFB773B008F662A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AACAD372CFB773D008F662A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AACAD412CFB773D008F662A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AACAD3D2CFB773D008F662A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AACAD2A2CFB773B008F662A /* Upright Hackwestern */;
+			targetProxy = 2AACAD3C2CFB773D008F662A /* PBXContainerItemProxy */;
+		};
+		2AACAD472CFB773D008F662A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AACAD2A2CFB773B008F662A /* Upright Hackwestern */;
+			targetProxy = 2AACAD462CFB773D008F662A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AACAD4D2CFB773D008F662A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AACAD4E2CFB773D008F662A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AACAD502CFB773D008F662A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Upright Hackwestern/Preview Content\"";
+				DEVELOPMENT_TEAM = 7LK8AX9KS8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Upright;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For your own good.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.com.Upright-Hackwesty";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2AACAD512CFB773D008F662A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Upright Hackwestern/Preview Content\"";
+				DEVELOPMENT_TEAM = 7LK8AX9KS8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Upright;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "For your own good.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.com.Upright-Hackwesty";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2AACAD532CFB773D008F662A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VM24Q8VR6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.com.Upright-HackwesternTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Upright Hackwestern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Upright Hackwestern";
+			};
+			name = Debug;
+		};
+		2AACAD542CFB773D008F662A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VM24Q8VR6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.com.Upright-HackwesternTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Upright Hackwestern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Upright Hackwestern";
+			};
+			name = Release;
+		};
+		2AACAD562CFB773D008F662A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VM24Q8VR6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.com.Upright-HackwesternUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Upright Hackwestern";
+			};
+			name = Debug;
+		};
+		2AACAD572CFB773D008F662A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VM24Q8VR6S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.com.Upright-HackwesternUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Upright Hackwestern";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AACAD262CFB773A008F662A /* Build configuration list for PBXProject "Upright Hackwestern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AACAD4D2CFB773D008F662A /* Debug */,
+				2AACAD4E2CFB773D008F662A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AACAD4F2CFB773D008F662A /* Build configuration list for PBXNativeTarget "Upright Hackwestern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AACAD502CFB773D008F662A /* Debug */,
+				2AACAD512CFB773D008F662A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AACAD522CFB773D008F662A /* Build configuration list for PBXNativeTarget "Upright HackwesternTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AACAD532CFB773D008F662A /* Debug */,
+				2AACAD542CFB773D008F662A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AACAD552CFB773D008F662A /* Build configuration list for PBXNativeTarget "Upright HackwesternUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AACAD562CFB773D008F662A /* Debug */,
+				2AACAD572CFB773D008F662A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AACAD232CFB773A008F662A /* Project object */;
+}
