@@ -31,6 +31,12 @@ const SeverityIndicator = ({
       icon: AlertOctagon,
       label: "High Severity",
     },
+    severe: {
+      color: "bg-red-500 text-black hover:bg-red-500/80",
+      icon: AlertOctagon,
+      label: "Severe Severity",
+    }
+
   };
 
   const { color, icon: Icon, label } = severityConfig[severity];
