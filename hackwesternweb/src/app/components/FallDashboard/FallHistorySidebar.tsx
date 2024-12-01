@@ -1,15 +1,18 @@
+"use client";
 import React from "react";
 import { Card } from "@/app/components/ui/card";
 import { ScrollArea } from "@/app/components/ui/scroll-area";
 import { Button } from "@/app/components/ui/button";
 import { ChevronLeft, ChevronRight, History } from "lucide-react";
 import FallHistoryItem from "./FallHistoryItem";
+import { useRouter } from "next/navigation";
 
 interface FallHistoryEntry {
   id: string;
   timestamp: string;
   location: string;
   severity: "low" | "medium" | "high" | "severe";
+  fallID: string;
 }
 
 interface FallHistorySidebarProps {
@@ -31,21 +34,25 @@ const FallHistorySidebar = ({
       timestamp: "2024-03-21 14:30:00",
       location: "123 Main St, San Francisco, CA",
       severity: "high",
+      fallID: '1',
     },
     {
       id: "2",
       timestamp: "2024-03-21 10:15:00",
       location: "456 Market St, San Francisco, CA",
       severity: "medium",
+      fallID: '2',
     },
     {
       id: "3",
       timestamp: "2024-03-20 16:45:00",
       location: "789 Mission St, San Francisco, CA",
       severity: "low",
+      fallID: '3',
     },
   ],
 }: FallHistorySidebarProps) => {
+  const router = useRouter();
   return (
     <div
       className={`fixed right-0 top-0 h-full transition-all duration-300 bg-white sidebar ${isOpen ? "w-[500px]" : "w-[60px] collapsed"}`}
@@ -77,14 +84,19 @@ const FallHistorySidebar = ({
               <ScrollArea className="h-[calc(100%-80px)] pr-4">
                 <div className="space-y-4">
                   {fallHistory.map((incident) => (
-                    <FallHistoryItem
-                      key={incident.id}
-                      timestamp={incident.timestamp}
-                      location={incident.location || 'bad'}
-                      severity={incident.severity}
-                      isSelected={selectedIncidentId === incident.id}
-                      onClick={() => onIncidentSelect(incident.id)}
-                    />
+                    
+                      <FallHistoryItem
+                        key={incident.id}
+                        timestamp={incident.timestamp}
+                        location={incident.location || 'bad'}
+                        severity={incident.severity}
+                        isSelected={selectedIncidentId === incident.id}
+                        onClick={() => {
+                          onIncidentSelect(incident.id)
+                          router.push(`/?id=${incident.fallID}`)
+                        }}
+                      />
+                    
                   ))}
                 </div>
               </ScrollArea>
